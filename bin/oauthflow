@@ -1,0 +1,47 @@
+#!/usr/bin/env node
+var oauthflow = require('../');
+var input = [];
+var out = require('out');
+var stdin = process.stdin;
+
+stdin.on('data', function(chunk) {
+  input[input.length] = chunk.toString();
+});
+
+stdin.on('end', function(chunk) {
+  var cfg;
+  var method = 'authenticate';
+
+  if (chunk) {
+    input[input.length] = chunk;
+  }
+
+  try {
+    cfg = JSON.parse(input.join(''));
+  }
+  catch (e) {
+    return out('!{red}oauthflow requires json formatted content as input');
+  }
+
+  // if we have a refresh token, then attempt a refresh
+  if (cfg.tokens && cfg.tokens.refresh) {
+    method = 'refresh';
+  }
+
+  // run the flow
+  oauthflow[method](cfg, function(err, output) {
+    if (err) {
+      if (! (err instanceof Error)) {
+        err = new Error(err.data);
+      }
+
+      out.error(err);
+      return process.exit(1);
+    }
+
+    // write the output to stdout
+    console.log(JSON.stringify(output, false, ' '));
+  });
+});
+
+process.stdin.resume();

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OAuth Callback page</title>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+</head>
+<body>
+<h1>OAuth Sample - Callback page</h1>
+<form id="tokenForm" action="https://api.alfresco.com/auth/oauth/versions/2/
+token" method="post" target="ipostresponse">
+code: <input id="authCode" name="code" value="f9d9f182-700b-4c67-8235-
+b6ea08870872" size="50px"><br/>
+client_id: <input name="client_id"
+value="l74dx104ddc00c3db4509b2d02f62c3a01234" size="50px">
+* This must match the registered value in the developer portal</font><br/>
+client_secret: <input name="client_secret"
+value="ebf0708b9c8a46efb0115024a7a204e0" size="50px">
+* This must match the registered value in the developer portal</font><br/>
+redirect_uri: <input name="redirect_uri" value="http://localhost:8080/
+alfoauthsample/mycallback.html" size="70px">
+* This must match the registered value in the developer portal</font><br/>
+grant_type: <input name="grant_type" value="authorization_code"
+readonly="readonly"><br/>
+<input type="submit">
+</form>
