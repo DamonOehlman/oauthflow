@@ -20,8 +20,8 @@ Given that you have a configuration file something like the following:
   "tokenPath": "/token"
  },
  "client": {
-  "key": "l7xx318c7c86df9a4e87a8ebecdf32e9e9fd",
-  "secret": "21d1fe56007d42199a7903eb18cf4669"
+  "key": "xxx",
+  "secret": "xxx"
  },
  "callback": "http://localhost:3000/",
  "params": {
