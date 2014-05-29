@@ -6,6 +6,7 @@ currently only OAuth2) flow simpler from the command-line.
 
 [![NPM](https://nodei.co/npm/oauthflow.png)](https://nodei.co/npm/oauthflow/)
 
+[![experimental](https://img.shields.io/badge/stability-experimental-red.svg)](https://github.com/badges/stability-badges) 
 
 ## Usage
 
@@ -72,7 +73,7 @@ Then a simple refresh flow will be attempted instead.
 
 ### MIT
 
-Copyright (c) 2013 Damon Oehlman <damon.oehlman@gmail.com>
+Copyright (c) 2014 Damon Oehlman <damon.oehlman@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
