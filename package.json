@@ -26,10 +26,10 @@
     "url": "https://bitbucket.org/DamonOehlman/oauthflow/issues"
   },
   "dependencies": {
-    "oauth": "~0.9.10",
-    "out": "~0.5.0",
-    "browser-launcher": "~0.3.4",
-    "async": "~0.2.9",
-    "cog": "~0.2.0"
+    "oauth": "~0.9",
+    "out": "~0.5",
+    "browser-launcher": "~0.3",
+    "async": "~0.9",
+    "cog": "~0.5"
   }
 }
