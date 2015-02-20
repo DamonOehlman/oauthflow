@@ -13,7 +13,7 @@
   "preferGlobal": true,
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/DamonOehlman/oauthflow.git"
+    "url": "https://github.com/DamonOehlman/oauthflow.git"
   },
   "keywords": [
     "oauth",
@@ -23,7 +23,7 @@
   "author": "Damon Oehlman <damon.oehlman@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://bitbucket.org/DamonOehlman/oauthflow/issues"
+    "url": "https://github.com/DamonOehlman/oauthflow/issues"
   },
   "dependencies": {
     "async": "~0.9",
