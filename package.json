@@ -1,7 +1,7 @@
 {
   "name": "oauthflow",
   "version": "0.0.6",
-  "description": "CLI OAuth flow helper",
+  "description": "CLI oauth authentication token helper tool",
   "main": "index.js",
   "bin": {
     "oauthflow": "bin/oauthflow"
