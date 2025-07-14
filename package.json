@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "async": "~0.9",
-    "browser-launcher": "^1.0.0",
+    "browser-launcher": "^3.0.0",
     "cog": "^1.0.0",
     "oauth": "~0.9",
     "out": "~0.5"
